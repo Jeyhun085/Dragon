@@ -1,6 +1,3 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-
 function SimpleCard(props) {
   return (
     <div
@@ -16,6 +13,7 @@ function SimpleCard(props) {
       }}
     >
       <img
+      loading="lazy"
         style={{ width: "100%" }}
         alt={props.name}
         src={`/images/${props.logo}Logo.png`}

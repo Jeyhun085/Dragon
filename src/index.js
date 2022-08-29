@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from './Components/redux/store'
 
 import App from "./Components/App";
+import Footer from "./Components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,4 +14,9 @@ root.render(
       <App />
     </BrowserRouter>
   </Provider>
+);
+
+const footer = ReactDOM.createRoot(document.getElementById("footer"));
+footer.render(
+      <Footer />
 );
