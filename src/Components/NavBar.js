@@ -19,9 +19,9 @@ function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="tel:+994514556655">051-455-66-55</Nav.Link>
+              <Nav.Link style={{}} href="tel:+994514556655">051-455-66-55</Nav.Link>
               <Nav.Link href="/">Əsas səhifə</Nav.Link>
-              <Nav.Link href="/catalog/new">Kataloq</Nav.Link>
+              <Nav.Link className="kataloq-link" href="/catalog/new">Kataloq</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

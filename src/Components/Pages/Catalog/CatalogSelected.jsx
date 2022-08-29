@@ -135,7 +135,7 @@ function ComingSoon() {
     >
       <div>
         <h1 style={{ paddingLeft: "5%", paddingRight: "5%" }}>
-          Təssüf ki Sizin avtomobilə aid məlumatlar tam hazır deyil.
+          Tezliklə Sizin avtomobilə aid olan məlumatlar tam hazır olacaq!
         </h1>
         <img
           loading="lazy"
@@ -144,15 +144,15 @@ function ComingSoon() {
           src="/images/ComingSoon.png"
         />
          
-        <h2 style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+        <h2 style={{ paddingLeft: "10%", paddingRight: "10%" , marginBottom:"2%"}}>
           Hələlik aşagıdaki link vasitəsi ilə WhatsApp üzərindən bizim
-          mütəxəssislərlə əlaqə saxlıya bilərsiz və ya
+          mütəxəssislərlə əlaqə saxlıya bilərsiniz
         </h2>
         <Button variant="success" href="https://wa.me/994514556655">
           WhatsApp ilə əlaqə
         </Button>{" "}
-        <div style={{ paddingTop: "10%" }}>
-          <h1>Hazır olan modellər</h1>
+        <div style={{ padding: "2%" }}>
+          <h1  style={{ padding: "2%" }}> Hazır olan modellər</h1>
           <div
             style={{
               display: "flex",
