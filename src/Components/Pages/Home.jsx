@@ -61,7 +61,7 @@ const TagCanvas = ({ ...rest }) => {
       textColour: "red",
       outlineThickness: 0.5,
       outlineColour: "#FE0853",
-      maxSpeed: 0.02,
+      maxSpeed: 0.01,
       freezeActive: true,
       shuffleTags: true,
       shape: "sphere",
@@ -70,6 +70,7 @@ const TagCanvas = ({ ...rest }) => {
       noSelect: true,
       textFont: null,
       freezeDecel: true,
+      noMouse: true,
       fadeIn: 500,
       initial: [0.3, -0.1],
       depth: 1.1,
@@ -86,7 +87,7 @@ const TagCanvas = ({ ...rest }) => {
   return ( 
     <div> 
 
-     <img  alt="logo" src={"/images/logo.png"} style={{width:"100%", display:"flex", alignContent:"center" , justifyContent:"center", paddingLeft:"20%", paddingRight:"20%"}}/>   
+     <img  alt="Dragon Auto Parts" src={"/images/logo.png"} style={{width:"100%", display:"flex", alignContent:"center" , justifyContent:"center", paddingLeft:"20%", paddingRight:"20%"}}/>   
      <div
      
         style={{
@@ -102,8 +103,8 @@ const TagCanvas = ({ ...rest }) => {
             fontSize: "calc(15px + 1vw)",
           }}
         >
-          <span style={{ color: "red" }}>"HAVAL"</span> və{" "}
-          <span style={{ color: "red" }}>"GREAT WALL"</span> modelləri üçün
+          <span style={{ color: "red" }}>HAVAL</span> və{" "}
+          <span style={{ color: "red" }}>GREAT WALL</span> modelləri üçün
           ehtiyat hissələrin bizim{" "}
           <span> kataloqdan</span> seçib online
           sifariş edə bilərsiniz! </h1>   </div>
@@ -161,13 +162,13 @@ function Feautures() {
   return (
     <div style={{ marginTop: 30 }}>
       <Container style={{ textAlign: "center" }}>
-        <h1
+        <h2
           style={{ marginBottom: 30,
           fontSize: "calc(20px + 2vw)", 
           }}
         >
           Niyə məhz biz?
-        </h1>
+        </h2>
         <Row>
           {featureCardsInfo.map((feature, index) => {
             return (

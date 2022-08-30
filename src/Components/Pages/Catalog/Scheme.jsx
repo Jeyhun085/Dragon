@@ -12,7 +12,7 @@ function SimpleTable(props) {
   };
 
   function checkPrice(name, code) {
-    const text = `Salam. ${name},${code} qiyməti və mövcudlugu haqda məlumat almag istərdim. `
+    const text = `Salam. ${name},${code} qiyməti və mövcudluğu haqqında məlumat almaq istəyirəm. `
     window.open(`https://wa.me/994504962260?text=${text}`, "_blank")
   }
   return (

@@ -22,7 +22,7 @@ function SimpleCard(props) {
         alt={props.name}
         src={`/images/${props.logo}Logo.png`}
       />
-      <h3 style={{ textAlign: "center", color: "red", marginBottom:"0px", marginTop:"30px", fontWeight:"400" }}>{props.name}</h3>
+      <h3 style={{ textAlign: "center", color: "red", marginBottom:"10px", marginTop:"30px", fontWeight:"400" }}>{props.name}</h3>
     </div>
   );
 }

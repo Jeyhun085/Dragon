@@ -146,7 +146,7 @@ function ComingSoon() {
          
         <h2 style={{ paddingLeft: "10%", paddingRight: "10%" , marginBottom:"2%"}}>
           Hələlik aşagıdaki link vasitəsi ilə WhatsApp üzərindən bizim
-          mütəxəssislərlə əlaqə saxlıya bilərsiniz
+          mütəxəssislərlə əlaqə saxlaya bilərsiniz.
         </h2>
         <Button variant="success" href="https://wa.me/994514556655">
           WhatsApp ilə əlaqə

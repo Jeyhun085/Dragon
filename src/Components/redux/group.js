@@ -19,11 +19,17 @@ export const counterSlice = createSlice({
       state.modification = value.payload
 
     },
+    restart: (state) => {
+      state.brand = "";
+      state.model = "";
+      state.modification = ""
+
+    },
     
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { changeModel,changeBrand, changeModification  } = counterSlice.actions
+export const { changeModel,changeBrand, changeModification, restart  } = counterSlice.actions
 
 export default counterSlice.reducer

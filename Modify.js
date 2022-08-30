@@ -1,4 +1,4 @@
-import { modificationsData } from "../src/Data.js";
+import { modificationsData } from "./src/Data.js";
 import mv from "mv";
 import path from "path";
 import { fileURLToPath } from "url";
