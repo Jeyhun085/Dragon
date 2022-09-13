@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Scheme from "./Scheme";
 import SimpleCard from "./SimpleCard";
+import {  useDispatch } from "react-redux";
+import {SetIsLoading} from "../../redux/group";
 
 function ModificationSelected() {
   let { modelNumber } = useParams();
@@ -180,7 +182,9 @@ function OutputPage() {
   const [schema, setschema] = useState(queryParam.schema);
   let { modelNumber } = useParams();
   let [searchParams, setSearchParams] = useSearchParams();
+  const dispatch = useDispatch();
   useEffect(() => {
+    dispatch(SetIsLoading(true))
     setSection(queryParam.section);
     setschema(queryParam.schema);
   }, [searchParams, queryParam.section, queryParam.schema]);
@@ -273,7 +277,7 @@ function OutputPage() {
           paddingBottom: "3%",
         }}
       >
-        <NavButtons />
+        {modificationsData[modelNumber] === false || <NavButtons />}
       </div>
 
       {modificationsData[modelNumber] === false ? (

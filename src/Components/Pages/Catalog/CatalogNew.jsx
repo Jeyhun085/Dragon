@@ -1,4 +1,3 @@
-import {data} from "../../../Data";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -7,9 +6,12 @@ import {
   changeModification,
   restart
 } from "../../redux/group";
+
 import { useNavigate } from "react-router-dom";
 import SimpleCard from "./SimpleCard";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { data} from "../../../Data"
+
 
 
 function ChooseBrand() {
@@ -83,10 +85,12 @@ function ChooseModification() {
 function CatalogNew() {
   const group = useSelector((state) => state.group);
   const dispatch = useDispatch();
+  
 
   return (
     <div style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "100vh"}}>
         <Container>
+        
         <Button style={{ marginTop: "3%"}} variant="secondary" onClick={()=>{dispatch(restart())}}>Seçimi yenilə</Button>
           {group.brand === "" && <ChooseBrand />}
           {group.brand !== "" && group.model === "" && <ChooseModel />}

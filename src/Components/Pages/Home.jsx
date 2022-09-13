@@ -6,6 +6,9 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 
 
+
+
+
 const models = [
   { img: "C30" },
   { img: "C50" },
@@ -83,7 +86,7 @@ const TagCanvas = ({ ...rest }) => {
     }
   }, []);
 
-
+  
   return ( 
     <div> 
 
@@ -123,14 +126,15 @@ const TagCanvas = ({ ...rest }) => {
         id="tagcanvas"
         width={window.innerWidth > 600 ? 900 : 400}
         height={window.innerWidth > 600 ? 600 : 500}
-
+        
         style={{
           width: "100%",
-          zIndex: "99",
+          zIndex: "1",
           position: "relative",
           margin: "0 auto"
         }}
         className="to-fade-in fast-anim"
+        
       ></canvas>
       <div id="taglist" style={{ display: "none" }}>
         <ul>
@@ -153,7 +157,7 @@ const TagCanvas = ({ ...rest }) => {
 function TagCanvasSection() {
   return (
     <Container style={{ marginTop: 20 }}>
-      <TagCanvas />
+      <TagCanvas  />
     </Container>
   );
 }
@@ -199,7 +203,7 @@ function Home() {
   return (
     <div>
       <TagCanvasSection />
-      <Feautures />
+      <Feautures  />
     </div>
   );
 }

@@ -6,7 +6,8 @@ export const counterSlice = createSlice({
   initialState: {
     brand: "",
     model: "",
-    modification: ""
+    modification: "",
+    isLoading: true
   },
   reducers: {
     changeBrand: (state, value) => {
@@ -25,11 +26,14 @@ export const counterSlice = createSlice({
       state.modification = ""
 
     },
+    SetIsLoading : (state, value) => {
+      state.isLoading = value.payload
+    }
     
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { changeModel,changeBrand, changeModification, restart  } = counterSlice.actions
+export const { changeModel,changeBrand, changeModification, restart, SetIsLoading  } = counterSlice.actions
 
 export default counterSlice.reducer
