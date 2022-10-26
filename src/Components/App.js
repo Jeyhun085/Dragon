@@ -4,7 +4,7 @@ import "./styles.css";
 
 import OutputPage from "./Pages/Catalog/CatalogSelected";
 import CatalogNew from "./Pages/Catalog/CatalogNew";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import NavBar from "./NavBar";
 import Spinner from "./Spinner"
 import { useSelector } from "react-redux";
@@ -23,7 +23,7 @@ function App() {
   
   return (
     <div className="App">
-    {status && <Spinner/>}
+    {/* {status && <Spinner/>} */}
       <Routes>
         <Route path="*" element={<NavBar />}>
           <Route index element={<Home />} />

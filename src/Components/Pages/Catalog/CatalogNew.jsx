@@ -20,7 +20,7 @@ function ChooseBrand() {
     <Row >
       {data.brandList.map((item, index) => {
         return (
-          <Col key={index} style={{marginTop: 10, display: "flex", justifyContent: "center"}}>
+          <Col key={index} className="scaleItems" style={{marginTop: 10, display: "flex", justifyContent: "center"}}>
             <SimpleCard
               
               onClick={() => {
@@ -43,7 +43,7 @@ function ChooseModel() {
     <Row  >
       {data.modelList[group.brand].map((item, index) => {
         return (
-          <Col key={index} style={{marginTop: 10, display: "flex", justifyContent: "center"}}>
+          <Col key={index} className="scaleItems" style={{marginTop: 10, display: "flex", justifyContent: "center"}}>
             <SimpleCard
               onClick={() => {
                 dispatch(changeModel(item.value));
@@ -66,7 +66,7 @@ function ChooseModification() {
     <Row  >
       {data.modificationList[group.model].map((item, index) => {
         return (
-          <Col key={index} style={{marginTop: 10, display: "flex", justifyContent: "center"}}>
+          <Col key={index} className="scaleItems" style={{marginTop: 10, display: "flex", justifyContent: "center"}}>
             <SimpleCard
               onClick={() => {
                 dispatch(changeModification(item.value))
@@ -88,7 +88,7 @@ function CatalogNew() {
   
 
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "100vh"}}>
+    <div style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "100vh", margin: 20}}>
         <Container>
         
         <Button style={{ marginTop: "3%"}} variant="secondary" onClick={()=>{dispatch(restart())}}>Seçimi yenilə</Button>

@@ -21,6 +21,7 @@
     "mv": "^2.1.1",
     "query-string": "^7.1.1",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "^18.2.0",
@@ -29,6 +30,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.4",
+    "swiper": "^8.4.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -6,8 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Scheme from "./Scheme";
 import SimpleCard from "./SimpleCard";
-import {  useDispatch } from "react-redux";
-import {SetIsLoading} from "../../redux/group";
+import { useDispatch } from "react-redux";
+import { SetIsLoading } from "../../redux/group";
 
 function ModificationSelected() {
   let { modelNumber } = useParams();
@@ -146,7 +146,13 @@ function ComingSoon() {
           src="/images/ComingSoon.png"
         />
          
-        <h2 style={{ paddingLeft: "10%", paddingRight: "10%" , marginBottom:"2%"}}>
+        <h2
+          style={{
+            paddingLeft: "10%",
+            paddingRight: "10%",
+            marginBottom: "2%",
+          }}
+        >
           Hələlik aşagıdaki link vasitəsi ilə WhatsApp üzərindən bizim
           mütəxəssislərlə əlaqə saxlaya bilərsiniz.
         </h2>
@@ -154,22 +160,42 @@ function ComingSoon() {
           WhatsApp ilə əlaqə
         </Button>{" "}
         <div style={{ padding: "2%" }}>
-          <h1  style={{ padding: "2%" }}> Hazır olan modellər</h1>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <SimpleCard
-              onClick={() => {
-                handleClick("CC7150CE00");
+          <h1 style={{ padding: "2%" }}> Hazır olan modellər</h1>
+
+          <Row>
+            <Col
+              className="scaleItems"
+              style={{
+                marginTop: 10,
+                display: "flex",
+                justifyContent: "center",
               }}
-              logo="CC7150CE00"
-              name="1.5L Benzin Mexanika"
-            />
-          </div>
+            >
+              <SimpleCard
+                onClick={() => {
+                  handleClick("CC7150CE00");
+                }}
+                logo="CC7150CE00"
+                name="1.5L Benzin Mexanika"
+              />
+            </Col>
+            <Col
+              className="scaleItems"
+              style={{
+                marginTop: 10,
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <SimpleCard
+                onClick={() => {
+                  handleClick("CC6461KM68");
+                }}
+                logo="CC6461KM68"
+                name="2.0L Dizel Avtomat"
+              />
+            </Col>
+          </Row>
         </div>
       </div>
     </div>
@@ -184,7 +210,7 @@ function OutputPage() {
   let [searchParams, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(SetIsLoading(true))
+    dispatch(SetIsLoading(true));
     setSection(queryParam.section);
     setschema(queryParam.schema);
   }, [searchParams, queryParam.section, queryParam.schema]);
