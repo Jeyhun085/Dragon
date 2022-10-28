@@ -156,6 +156,7 @@ function Home() {
       <IntroSection />
       {/* <Feautures  /> */}
       <Brands />
+      
     </div>
   );
 }
