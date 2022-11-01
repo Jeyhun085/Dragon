@@ -50,9 +50,9 @@ footer {
 .wpContact {
   top: 50%;
 }
-.mb-2 {
-  color: #2d323a;
-  background-color: #ffffffae !important;
+.mb-2 { font-size: 12px;
+  color: #423f3f;
+  background-color: #f5f3f3f1 !important;
   border-radius: 25px !important;
   border: 2px solid rgba(167, 167, 167, 0.236) !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -82,6 +82,9 @@ footer {
   background: linear-gradient(-45deg, #19a186, #00ff5e, #734ae8);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
+}
+.mapContainer{
+  background-image: url(/public/images/map.png);
 }
 
 @keyframes gradient {

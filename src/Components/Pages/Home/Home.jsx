@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -21,24 +22,7 @@ const featureCardsInfo = [
     text: "Siz Dragon-a getmiyəcəksiz, Dragon Sizə gələcək . Online satış portalından və ya zəng vasitəsilə istədiyiniz ehtiyat hissəsini seçməyiniz kifayət edəcək ki, Bakı şəhəri daxili 0 - 2 saat ərzində, regionlara isə 12 - 48 saat ərzində ehtiyat hissəsini asanlıqla əldə edəcəksiz. Online və ya yerində ödəmə imkanı mümkündür. ",
   },
 
-  {
-    image: "3.png",
-    title: "Rahat alış",
-    text: "Dragon komandası Sizə  Azərbaycanda analoqu olmayan ilk ehtiyat hissələri portalı təqdim edir. Portal vasitəsi ilə lazım olan ehtiyat hissəsini düzgün və rahat seçmək çox asan olacaq. ",
-  },
 
-  {
-    image: "6.png",
-    title: "Professional xidmət ",
-    text: "Bəzən texniki nasazlığı aradan qaldırmaq üçün yanlış ehtiyat hissələrini almaq riskləri olur. Eyni model avtomobillər fərqli texniki göstəricilərə malik olduğundan , fərqli ehtiyat hissələri ilə təhciz olunur. Yanlış ehtiyat hissəsini almaq riski Dragon komandasının professional mütəxəssisləri sayəsində minimum dərəcəyə düşəcək.",
-  },
-
-  {
-    image: "5.png",
-    title: "Mütəxəssis konsultasiyası",
-    text: "Düzgün seçim etmək Dragon ilə daha asandır. Siz ehiyat hissəsini satıcıdan deyil – Mütəxəssislərdən alacaqsız.  Dragon komandası Sizə düzgün ehtiyat hissələrinin seçimində faydalı konsultasiya verməyə hər zaman hazırdır. ",
-  },
-];
 
 function Intro() {
   return (
@@ -84,7 +68,9 @@ function Intro() {
           textAlign: "center",
         }}
       >
+
         <CatalogDropdown />
+
       </div>
     </div>
   );
@@ -98,48 +84,7 @@ function IntroSection() {
   );
 }
 
-function Feautures() {
-  return (
-    <div style={{ marginTop: 30 }}>
-      <Container style={{ textAlign: "center" }}>
-        <h2 style={{ marginBottom: 30, fontSize: "calc(20px + 2vw)" }}>
-          Niyə məhz biz?
-        </h2>
-        <Row>
-          {featureCardsInfo.map((feature, index) => {
-            return (
-              <Col key={index} md={4} sm={12}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginBottom: "30px",
-                  }}
-                >
-                  <Card
-                    style={{ width: "18rem", height: "450px" }}
-                    className="mb-2"
-                  >
-                    {" "}
-                    <Card.Body>
-                      <Card.Img
-                        src={`/images/${feature.image}`}
-                        style={{ width: "80px", borderRadius: 50, margin: 10 }}
-                      />
 
-                      <Card.Title>{feature.title}</Card.Title>
-                      <Card.Text>{feature.text}</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
-    </div>
-  );
-}
 
 function Home() {
   return (
