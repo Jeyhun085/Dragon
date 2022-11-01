@@ -2,9 +2,7 @@ import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
-import Brands from "./Brands";
 import CatalogDropdown from "./CatalogDropdown";
-
 
 const featureCardsInfo = [
   {
@@ -42,7 +40,7 @@ const featureCardsInfo = [
   },
 ];
 
-function Intro () {
+function Intro() {
   return (
     <div>
       <img
@@ -86,18 +84,11 @@ function Intro () {
           textAlign: "center",
         }}
       >
-      <CatalogDropdown />
-        {/* <Button
-          style={{ width: "auto", padding: 10 }}
-          variant="danger"
-          href="/catalog/new"
-        >
-          Kataloqa keçid
-        </Button> */}
+        <CatalogDropdown />
       </div>
     </div>
   );
-};
+}
 
 function IntroSection() {
   return (
@@ -154,9 +145,6 @@ function Home() {
   return (
     <div>
       <IntroSection />
-      {/* <Feautures  /> */}
-      <Brands />
-      
     </div>
   );
 }

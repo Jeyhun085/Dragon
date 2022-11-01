@@ -6,6 +6,7 @@ import OutputPage from "./Pages/Catalog/CatalogSelected";
 import CatalogNew from "./Pages/Catalog/CatalogNew";
 import Home from "./Pages/Home/Home";
 import NavBar from "./NavBar";
+import Brands from "./Pages/Brands/Brands";
 import Fab from "@mui/material/Fab";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
@@ -28,8 +29,9 @@ function App() {
       <Routes>
         <Route path="*" element={<NavBar />}>
           <Route index element={<Home />} />
+          <Route path="brands" element={<Brands />} />
           <Route path="catalog/:modelNumber" element={<OutputPage />} />
-          <Route path="catalog/new" element={<CatalogNew />} />
+          {/* <Route path="catalog/new" element={<CatalogNew />} /> */}
         </Route>
       </Routes>
     </div>
