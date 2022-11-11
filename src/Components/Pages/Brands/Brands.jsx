@@ -1,10 +1,61 @@
-import { Tab, Tabs, Container, Row, Col } from "react-bootstrap";
+import { Tab, Tabs, Container, Row, Col, Modal, Button } from "react-bootstrap";
 import SimpleCard from "../Catalog/SimpleCard";
 import { data } from "../../../Data";
+import { useState } from "react";
+
+function BrandsModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header  closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+       Model: {props.brand[1]}
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Row>
+          {data.modificationList[props.brand[0]].map((item, index) => {
+            return (
+              <Col
+                key={index}
+                className="scaleItems"
+                style={{
+                  marginTop: 10,
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+                
+              >
+                <SimpleCard onClick={()=>{window.location=`/catalog/${item.value}`}} name={item.name} logo={item.value} />
+              </Col>
+            );
+          })}
+        </Row>
+      </Modal.Body>
+    </Modal>
+  );
+}
 
 function Brands() {
+  const [modalShow, setModalShow] = useState(false);
+  const [modalBrand, setModalBrand] = useState(["c30", "C30"]);
+
+  function handleBrandClick(value, name) {
+    setModalBrand([value, name]);
+    setModalShow(true);
+  }
+
   return (
     <div>
+      <BrandsModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        brand={modalBrand}
+      />
       <Container
         style={{ marginBottom: 25, marginTop: 20, textAlign: "center" }}
       >
@@ -37,7 +88,13 @@ function Brands() {
                           justifyContent: "center",
                         }}
                       >
-                        <SimpleCard  name={item.name} logo={item.value} />
+                        <SimpleCard
+                          name={item.name}
+                          logo={item.value}
+                          onClick={() => {
+                            handleBrandClick(item.value, item.name);
+                          }}
+                        />
                       </Col>
                     );
                   })}
@@ -58,7 +115,13 @@ function Brands() {
                           justifyContent: "center",
                         }}
                       >
-                        <SimpleCard name={item.name} logo={item.value} />
+                        <SimpleCard
+                          name={item.name}
+                          logo={item.value}
+                          onClick={() => {
+                            handleBrandClick(item.value, item.name);
+                          }}
+                        />
                       </Col>
                     );
                   })}

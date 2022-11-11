@@ -22,6 +22,7 @@ function NavBar() {
               <Nav.Link style={{}} href="tel:+994514556655">051-455-66-55</Nav.Link>
               <Nav.Link href="/about">Haqqımızda</Nav.Link>
                <Nav.Link  href="/contact">Əlaqə</Nav.Link>
+              <Nav.Link  href="/brands">Brendlər</Nav.Link>
               <Nav.Link style={{color: "rgb(206, 11, 11)"}}  href="/catalog/new">Kataloq</Nav.Link>
             </Nav>
           </Navbar.Collapse>
