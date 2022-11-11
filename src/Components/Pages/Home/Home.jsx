@@ -32,12 +32,12 @@ function Intro () {
             marginTop: "10%",
             width: "80%",
 
-            fontSize: "calc(15px + 1vw)",
+  
           }}
         >
           <span style={{ color: "red" }}>HAVAL</span> və{" "}
           <span style={{ color: "red" }}>GREAT WALL</span> modelləri üçün
-          ehtiyat hissələrin bizim <span> kataloqdan</span> seçib online sifariş
+          ehtiyat hissələrin bizim kataloqdan seçib online sifariş
           edə bilərsiniz!{" "}
         </h1>{" "}
       </div>

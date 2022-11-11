@@ -8,8 +8,7 @@ import Home from "./Pages/Home/Home";
 import NavBar from "./NavBar";
 import About from "./Pages/About/About";
 import Fab from "@mui/material/Fab";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import Delivery from "./Pages/Delivery/Delivery";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 import Contact from "./Pages/Contact/Contact";
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
           <Route path="catalog/:modelNumber" element={<OutputPage />} />
           <Route path="catalog/new" element={<CatalogNew />} />
           <Route path="about" element={<About/>} />
-          <Route path="delivery" element={<Delivery/>} />
           <Route path="contact" element={<Contact/>} />
         </Route>
       </Routes>

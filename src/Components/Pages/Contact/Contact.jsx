@@ -11,8 +11,8 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function Contact() {
     return (
       <div>
-        <h2 style={{ marginBottom: 30, marginTop: 30,  fontSize: "calc(20px + 2vw)", textAlign: "center"  }}>
-          Bizimle elaqe saxlayin.
+        <h2 style={{ marginBottom: 30, marginTop: 30, textAlign: "center"  }}>
+          Bizimlə əlaqə saxlayın.
         </h2>
         <Container className="mapContainer" style={{ 
                   display: "flex",

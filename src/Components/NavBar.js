@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 function NavBar() {
   return (
     <div>
-      <Navbar bg="light" expand="md">
+      <Navbar bg="light" expand="md"   style={{boxShadow:"5px 5px 5px 0px rgba(0,0,0,0.25)"}}>
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -21,7 +21,6 @@ function NavBar() {
             <Nav className="ms-auto">
               <Nav.Link style={{}} href="tel:+994514556655">051-455-66-55</Nav.Link>
               <Nav.Link href="/about">Haqqımızda</Nav.Link>
-              <Nav.Link  href="/delivery">Çatdırılma</Nav.Link>
                <Nav.Link  href="/contact">Əlaqə</Nav.Link>
               <Nav.Link style={{color: "rgb(206, 11, 11)"}}  href="/catalog/new">Kataloq</Nav.Link>
             </Nav>
