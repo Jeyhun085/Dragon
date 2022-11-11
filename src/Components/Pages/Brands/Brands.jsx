@@ -57,9 +57,9 @@ function Brands() {
         brand={modalBrand}
       />
       <Container
-        style={{ marginBottom: 25, marginTop: 100, textAlign: "center" }}
+        style={{ marginBottom: 25, marginTop: 20, textAlign: "center" }}
       >
-        <h1>Modellər</h1>
+        <h2>Modellər</h2>
         <div
           style={{
             borderRadius: 10,
@@ -75,8 +75,8 @@ function Brands() {
             justify
           >
             <Tab eventKey="haval" title="Haval">
-              <Container style={{ padding: 20 }}>
-                <Row>
+              <Container style={{ padding: "10px" }}>
+                <Row style={{ padding: "2px" }}>
                   {data.modelList.haval.map((item, index) => {
                     return (
                       <Col
@@ -102,7 +102,7 @@ function Brands() {
               </Container>
             </Tab>
             <Tab eventKey="greatWall" title="Great Wall">
-              <Container style={{ padding: 20 }}>
+              <Container style={{ padding: 10 }}>
                 <Row>
                   {data.modelList.gw.map((item, index) => {
                     return (

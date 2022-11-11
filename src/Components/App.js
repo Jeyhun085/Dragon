@@ -9,8 +9,7 @@ import NavBar from "./NavBar";
 import About from "./Pages/About/About";
 import Brands from "./Pages/Brands/Brands";
 import Fab from "@mui/material/Fab";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import Delivery from "./Pages/Delivery/Delivery";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 import Contact from "./Pages/Contact/Contact";
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
           <Route path="brands" element={<Brands />} />
           <Route path="catalog/:modelNumber" element={<OutputPage />} />
           <Route path="about" element={<About/>} />
-          <Route path="delivery" element={<Delivery/>} />
           <Route path="contact" element={<Contact/>} />
           {/* <Route path="catalog/new" element={<CatalogNew />} /> */}
         </Route>

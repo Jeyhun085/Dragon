@@ -2,13 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Exo:wght@300;400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Exo:wght@300;400;800&family=Inter:wght@100;300;400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@500&family=Oswald:wght@400;600&family=PT+Sans&family=Roboto:wght@100;300;500&display=swap');
 * {
-  font-family: "Inter";
+  font-family:'Lato';
 }
 
 body {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2ac 100%);
+  background-image:linear-gradient(
+    170deg, hsl(0deg 0% 100%) 55%,
+    rgb(251, 250, 255) 100%
+   
+  );
   min-height: 100vh;
   position: relative;
 }
@@ -21,7 +26,7 @@ body::after {
 h1,
 h2,
 h3 {
-  font-family: "Inter";
+  font-family: "Roboto";
 }
 
 footer {
@@ -52,10 +57,10 @@ footer {
 }
 .mb-2 { font-size: 12px;
   color: #423f3f;
-  background-color: #f5f3f3f1 !important;
+  background-color:transparent!important;
   border-radius: 25px !important;
   border: 2px solid rgba(167, 167, 167, 0.236) !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  box-shadow: -8px -8px 12px 0 rgba(0, 0, 0, 0.3), 12px 12px 16px rgba(255, 255, 255, 0.25)!important;
 }
 .logo-for-main {
   display: flex;
@@ -86,6 +91,11 @@ footer {
 .mapContainer{
   background-image: url(/public/images/map.png);
 }
+.car-for-delivery{
+  position: relative;
+  animation: mymove 1s ease;
+
+}
 
 @keyframes gradient {
   0% {
@@ -97,4 +107,9 @@ footer {
   100% {
     background-position: 0% 50%;
   }
-}
+ 
+} 
+@keyframes mymove {
+    from {left:300px;}
+    to {left: 0px;}
+  }
