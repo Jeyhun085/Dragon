@@ -1,28 +1,5 @@
 import { Container } from "react-bootstrap";
-
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
 import CatalogDropdown from "./CatalogDropdown";
-
-const featureCardsInfo = [
-  {
-    image: "4.png",
-    title: "Yüksək keyfiyyət",
-    text: "Hər bir müştəri minimum xərclə - maksimum nəticə əldə etmək istəyir. Dragon komandasının mütəxəssisləri Sizə ən yüksək keyfiyyətli , etibarlı və uzunömürlü ehtiyat hissələrini təqdim etmək üçün mütəmadi olaraq Çinə səfər edərək , istehsalçı şirkətlərlə görüşlər keçirdir və ehtiyat hissələrini müvafiq testlərdən keçirdir.",
-  },
-  {
-    image: "2.png",
-    title: "Münasib qiymət",
-    text: "Dragon komandasının hədəfi Sizin bir ehtiyat hissəsini münasib qiymətə alıb və uzun müddət həmin ehityat hissəsi barədə düşünməməyinizdir – Keyfiyyət sərfəlidir. ",
-  },
-  {
-    image: "1.png",
-    title: "Sürətli çatdırılma ",
-    text: "Siz Dragon-a getmiyəcəksiz, Dragon Sizə gələcək . Online satış portalından və ya zəng vasitəsilə istədiyiniz ehtiyat hissəsini seçməyiniz kifayət edəcək ki, Bakı şəhəri daxili 0 - 2 saat ərzində, regionlara isə 12 - 48 saat ərzində ehtiyat hissəsini asanlıqla əldə edəcəksiz. Online və ya yerində ödəmə imkanı mümkündür. ",
-  },
-
-
 
 function Intro() {
   return (
@@ -50,14 +27,12 @@ function Intro() {
           style={{
             marginTop: "10%",
             width: "80%",
-
-  
           }}
         >
           <span style={{ color: "red" }}>HAVAL</span> və{" "}
           <span style={{ color: "red" }}>GREAT WALL</span> modelləri üçün
-          ehtiyat hissələrin bizim kataloqdan seçib online sifariş
-          edə bilərsiniz!{" "}
+          ehtiyat hissələrin bizim kataloqdan seçib online sifariş edə
+          bilərsiniz!{" "}
         </h1>{" "}
       </div>
       <div
@@ -68,9 +43,7 @@ function Intro() {
           textAlign: "center",
         }}
       >
-
         <CatalogDropdown />
-
       </div>
     </div>
   );
@@ -83,8 +56,6 @@ function IntroSection() {
     </Container>
   );
 }
-
-
 
 function Home() {
   return (

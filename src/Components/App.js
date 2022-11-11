@@ -35,7 +35,7 @@ function App() {
           <Route path="catalog/:modelNumber" element={<OutputPage />} />
           <Route path="about" element={<About/>} />
           <Route path="contact" element={<Contact/>} />
-          {/* <Route path="catalog/new" element={<CatalogNew />} /> */}
+          <Route path="catalog/new" element={<CatalogNew />} />
         </Route>
       </Routes>
     </div>

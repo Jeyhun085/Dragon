@@ -69,7 +69,7 @@ function Brands() {
           }}
         >
           <Tabs
-            defaultActiveKey="haval"
+            defaultActiveKey="greatWall"
             id="justify-tab-example"
             className="mb-3"
             justify
